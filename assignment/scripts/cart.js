@@ -6,8 +6,12 @@ let basket = [];
 const maxItems = 5;
 
 function addItem(item) {
-    basket.unshift(item);
-    return true;
+    if (isFull()) {
+        return false;
+    } else {
+        basket.unshift(item);
+        return true;
+    }
 }
 
 console.log(addItem("computer"));
@@ -37,12 +41,16 @@ function empty() {
 console.log(basket);
 
 function isFull() {
-   return basket.length >= 5 ? true: false;
+    return basket.length >= 5 ? true : false;
 }
 
 console.log(isFull());//should be true
+console.log(addItem("desk"));//should return false
+console.log(basket);//should list the same five items
 empty();
 console.log(isFull());//should be false
+console.log(addItem("desk"));//should return true
+console.log(basket);//should return [desk]
 
 
 // DO NOT MODIFY
