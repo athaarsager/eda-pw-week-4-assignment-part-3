@@ -2,9 +2,17 @@ console.log('***** Cart Functions *****');
 // Make sure to test all functions here in the JS file!
 // We want to see how you are testing your code!!!
 
+let basket = [];
 
+function addItem(item) {
+    basket.unshift(item);
+    return true;
+}
 
-
+/*console.log(addItem("computer"));
+addItem("monitor");
+console.log(basket);*/
+//used the above to test function. Everything worked!
 
 
 
