@@ -26,7 +26,14 @@ function listItems() {
 
 listItems();//function works!
 
+function empty() {
+    basket.splice(0, basket.length);
+}
 
+//console.log(basket.length-1);--originally set to basket.length-1. used to test and realize that's not what I wanted
+
+empty();
+console.log(basket);
 
 
 
