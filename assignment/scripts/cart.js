@@ -33,9 +33,16 @@ function empty() {
 
 //console.log(basket.length-1);--originally set to basket.length-1. used to test and realize that's not what I wanted
 
-empty();
+//empty();--commented out so I can test isFull more easily
 console.log(basket);
 
+function isFull() {
+   return basket.length >= 5 ? true: false;
+}
+
+console.log(isFull());//should be true
+empty();
+console.log(isFull());//should be false
 
 
 // DO NOT MODIFY
