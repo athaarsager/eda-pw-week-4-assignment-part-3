@@ -3,6 +3,7 @@ console.log('***** Cart Functions *****');
 // We want to see how you are testing your code!!!
 
 let basket = [];
+const maxItems = 5;
 
 function addItem(item) {
     basket.unshift(item);
