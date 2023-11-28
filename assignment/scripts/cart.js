@@ -14,12 +14,17 @@ addItem("monitor");
 console.log(basket);
 //used the above to test function. Everything worked!
 
+addItem("speakers");
+addItem("keyboard");
+addItem("mouse");
+
 function listItems() {
     for (let item of basket) {
         console.log(item);
     }
 }
 
+listItems();//function works!
 
 
 
@@ -37,6 +42,6 @@ try {
         isFull: typeof isFull !== 'undefined' ? isFull : undefined,
         removeItem: typeof removeItem !== 'undefined' ? removeItem : undefined,
     };
-} catch(e) {
+} catch (e) {
     // Do nothing
 }
