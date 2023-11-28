@@ -9,11 +9,16 @@ function addItem(item) {
     return true;
 }
 
-/*console.log(addItem("computer"));
+console.log(addItem("computer"));
 addItem("monitor");
-console.log(basket);*/
+console.log(basket);
 //used the above to test function. Everything worked!
 
+function listItems() {
+    for (let item of basket) {
+        console.log(item);
+    }
+}
 
 
 
