@@ -35,6 +35,7 @@ function removeItem(item) {
 }
 
 console.log("Test - remove keyboard. Should return keyboard.", removeItem("keyboard"));
+console.log("Test - remove book should return null.", removeItem("book"));
 
 function listItems() {
     for (let item of basket) {
