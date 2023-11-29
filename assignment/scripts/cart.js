@@ -23,6 +23,19 @@ addItem("speakers");
 addItem("keyboard");
 addItem("mouse");
 
+function removeItem(item) {
+    let itemNumber = basket.indexOf(item);
+   
+    if (itemNumber === -1) {
+        return null;
+    } else {
+       let foundItem = basket.splice(itemNumber, 1);
+       return foundItem.toString();
+    }
+}
+
+console.log("Test - remove keyboard. Should return keyboard.", removeItem("keyboard"));
+
 function listItems() {
     for (let item of basket) {
         console.log(item);
