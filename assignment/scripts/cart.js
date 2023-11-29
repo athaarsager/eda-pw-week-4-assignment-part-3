@@ -25,12 +25,12 @@ addItem("mouse");
 
 function removeItem(item) {
     let itemNumber = basket.indexOf(item);
-   
+
     if (itemNumber === -1) {
         return null;
     } else {
-       let foundItem = basket.splice(itemNumber, 1);
-       return foundItem.toString();
+        let foundItem = basket.splice(itemNumber, 1);
+        return foundItem.toString();
     }
 }
 
